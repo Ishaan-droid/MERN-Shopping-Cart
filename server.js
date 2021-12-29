@@ -34,6 +34,15 @@ app.all('*', (req, res, next) => {
   next(err);
 });
 
+process.on('uncaughtException', err => {
+  console.log(err.name, err.message);
+  console.log('SHUTTING SERVER DUE TO UNCAUGHT EXCEPTION 💥');
+
+  process.exit(1);
+});
+
+app.use(globalErrorHandler);
+
 // HOSTING FOR PRODUCTION
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
@@ -45,16 +54,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const PORT = process.env.PORT || 8000;
 
-process.on('uncaughtException', err => {
-  console.log(err.name, err.message);
-  console.log('SHUTTING SERVER DUE TO UNCAUGHT EXCEPTION 💥');
-
-  process.exit(1);
-});
-
-app.use(globalErrorHandler);
-
-const server = app.listen(8000, () => console.log(`Server is running on ${PORT}`));
+const server = app.listen(PORT, () => console.log(`Server is running on ${PORT}`));
 
 process.on('unhandledRejection', (error, promise) => {
   console.log(`Error occured at promise ${promise}`);
