@@ -7,7 +7,9 @@
     "dev": "nodemon server.js",
     "prod": "NODE_ENV=production nodemon server.js",
     "start": "node server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "npm run client-install && npm run client-build",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build"
   },
   "author": "Ishaan Thakur",
   "license": "ISC",
