@@ -1,0 +1,60 @@
+:root {
+  --main-nav-color: white;
+  --secondary-nav-color: #ffc107;
+  --main-dropdown-color: black;
+  --main-green-color: #28a745;
+  --main-red-color: #dc3545;
+  --card-font-size: 15px;
+  --card-font-weight: 600;
+}
+
+.my-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-font-size {
+  font-size: clamp(4rem, 12vw, 6.5rem);
+  font-weight: 300;
+}
+
+.secondary-heading-font-size {
+  font-size: clamp(1rem, 5.5vw, 2rem);
+  font-weight: 400;
+}
+
+.card-tags {
+  display: inline;
+  border-radius: 8px;
+  margin-left: 1rem;
+  padding: 6px 10px;
+  font-size: var(--card-font-size);
+  font-weight: var(--card-font-weight);
+  box-shadow: 0 2px 4px rgba(50, 50, 93, 0.2);
+}
+
+.few-stock-left {
+  color: var(--main-red-color);
+  background-color: #343a40;
+}
+
+.non-veg {
+  color: var(--main-red-color);
+}
+
+.in-stock,
+.sale,
+.veg {
+  color: var(--main-green-color);
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--main-red-color);
+}
+
+.all-reviews {
+  border-bottom: 1px solid black;
+  overflow: scroll;
+}

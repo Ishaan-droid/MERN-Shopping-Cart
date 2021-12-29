@@ -1,0 +1,12 @@
+// {
+    //     "title": "Fresh Brown Eggs",
+    //     "summary": "A pack of 10 eggs directly from the farm.",
+    //     "image": "/images/brownEggs.jpg",
+    //     "description": "These are one of nature's most wholesome foods.
+    //                    Fully packed with protein and healthy fats to nourish your body.",
+    //     "category": "Non-Vegetarian",
+    //     "stock": 15,
+    //     "currentPrice": 150,
+    //     "discount": 12,
+    //     "originalPrice": 170
+    // }
