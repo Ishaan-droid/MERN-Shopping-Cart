@@ -18,3 +18,4 @@ This app still has many feature to be implemented. Registration process is imple
 
 Email - Jack@test.com
 Password - Password1
+https://lit-wave-64353.herokuapp.com/
