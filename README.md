@@ -16,6 +16,6 @@ This app still has many feature to be implemented. Registration process is imple
 
 # Test Data
 
-Email - Jack@test.com
-Password - Password1
-Visit Here - https://lit-wave-64353.herokuapp.com/
+> Email - Jack@test.com
+> Password - Password1
+> Visit Here - https://lit-wave-64353.herokuapp.com/
