@@ -50,9 +50,7 @@ if (process.env.NODE_ENV === 'production') {
 //   next(err);
 // });
 
-console.log('hit');
-
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 7000;
 
 app.use(globalErrorHandler);
 
